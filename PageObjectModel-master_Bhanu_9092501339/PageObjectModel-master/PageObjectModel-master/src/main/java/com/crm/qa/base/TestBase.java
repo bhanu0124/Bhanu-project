@@ -40,11 +40,14 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
+		System.out.println("GIT TestBase");
+		
 		if(browserName.equals("chrome")){
 			//System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\brathore\\Desktop\\Selenium\\chromedriver.exe");
 			driver = new ChromeDriver(); 
 		}
+		
 		
 	      ///(browser.equalsIgnoreCase("IE"))
 		
